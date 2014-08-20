@@ -1,0 +1,11 @@
+Django==1.6.5
+Pillow==2.5.2
+South==1.0
+django-appconf==0.6
+django-bootstrap3==4.10.0
+django-geoposition==0.2.2
+django-markdown-deux==1.0.4
+django-staticfiles==1.2.1
+django-tinymce==1.5.2
+markdown2==2.2.2
+six==1.7.3
