@@ -93,8 +93,8 @@ DATABASES = {
         # Or path to database file if using sqlite3.
         'NAME': 'landing',
         # The following settings are not used with sqlite3:
-        'USER': 'root',
-        'PASSWORD': '09228845964',
+        'USER': 'rbwong',
+        'PASSWORD': '5233313.',
         # Empty for localhost through domain sockets or
         # '127.0.0.1' for localhost through TCP.
         'HOST': 'localhost',
