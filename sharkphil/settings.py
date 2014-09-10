@@ -17,7 +17,7 @@ PROJECT_PATH = os.path.join(SETTINGS_DIR, os.pardir)
 PROJECT_PATH = os.path.abspath(PROJECT_PATH)
 
 TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'templates')
-STATIC_PATH = os.path.join(PROJECT_PATH,'static')
+STATIC_PATH = os.path.join(PROJECT_PATH, 'static')
 
 MEDIA_ROOT = os.path.join(PROJECT_PATH, 'static/media')
 MEDIA_URL = '/static/media/'
@@ -84,16 +84,23 @@ ROOT_URLCONF = 'sharkphil.urls'
 
 WSGI_APPLICATION = 'sharkphil.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    DATABASES = {
+        'default': {
+            # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            # Or path to database file if using sqlite3.
+            'NAME': 'landing',
+            # The following settings are not used with sqlite3:
+            'USER': 'rbwong',
+            'PASSWORD': '09228845964',
+            # Empty for localhost through domain sockets or
+            # '127.0.0.1' for localhost through TCP.
+            'HOST': 'localhost',
+            'PORT': '',                      # Set to empty string for default.
+        }
     }
-}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
