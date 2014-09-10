@@ -19,9 +19,6 @@ PROJECT_PATH = os.path.abspath(PROJECT_PATH)
 TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'templates')
 STATIC_PATH = os.path.join(PROJECT_PATH, 'static')
 
-MEDIA_ROOT = os.path.join(PROJECT_PATH, 'static/media')
-MEDIA_URL = '/static/media/'
-
 
 GEOPOSITION_MAP_OPTIONS = {
     'zoom': 5,
@@ -122,6 +119,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = "/opt/shark/static/"
+
+MEDIA_ROOT = os.path.join(STATIC_ROOT, 'media')
+MEDIA_URL = '/static/media/'
 
 STATICFILES_DIRS = (
     STATIC_PATH,
