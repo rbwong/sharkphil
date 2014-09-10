@@ -121,6 +121,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = "/opt/shark/static/"
+
 STATICFILES_DIRS = (
     STATIC_PATH,
 )
