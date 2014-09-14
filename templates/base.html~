@@ -12,7 +12,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>{% block title %}Shark Car Accessories{% endblock %}</title>
+    <title>{% block title %}Jabari | Your one stop publicity promotions{% endblock %}</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
