@@ -17,10 +17,7 @@ PROJECT_PATH = os.path.join(SETTINGS_DIR, os.pardir)
 PROJECT_PATH = os.path.abspath(PROJECT_PATH)
 
 TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'templates')
-STATIC_PATH = os.path.join(PROJECT_PATH,'static')
-
-MEDIA_ROOT = os.path.join(PROJECT_PATH, 'static/media')
-MEDIA_URL = '/static/media/'
+STATIC_PATH = os.path.join(PROJECT_PATH, 'static')
 
 
 GEOPOSITION_MAP_OPTIONS = {
@@ -84,14 +81,21 @@ ROOT_URLCONF = 'sharkphil.urls'
 
 WSGI_APPLICATION = 'sharkphil.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        # Or path to database file if using sqlite3.
+        'NAME': 'landing',
+        # The following settings are not used with sqlite3:
+        'USER': 'rbwong',
+        'PASSWORD': '5233313.',
+        # Empty for localhost through domain sockets or
+        # '127.0.0.1' for localhost through TCP.
+        'HOST': 'localhost',
+        'PORT': '',                      # Set to empty string for default.
     }
 }
 
@@ -113,6 +117,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = "/opt/shark/static/"
+
+MEDIA_ROOT = os.path.join(STATIC_ROOT, 'media')
+MEDIA_URL = '/static/media/'
 
 STATICFILES_DIRS = (
     STATIC_PATH,
