@@ -32,8 +32,9 @@
                         <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Telephone</h4>
-                    <p class="text-muted">+63 2 374-3636</p>
-                    <p class="text-muted">+63 3 372-2464</p>
+                    {% if object.phone_no1 %}<p class="text-muted">{{ object.phone_no1 }}</p>{% endif %}
+                    {% if object.phone_no2 %}<p class="text-muted">{{ object.phone_no2 }}</p>{% endif %}
+                    {% if object.phone_no3 %}<p class="text-muted">{{ object.phone_no3 }}</p>{% endif %}
                 </div>
                 <div class="col-md-3">
                     <span class="fa-stack fa-4x">
@@ -41,9 +42,9 @@
                         <i class="fa fa-mobile-phone fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Mobile</h4>
-                    <p class="text-muted">+63 917 80-74275</p>
-                    <p class="text-muted">+63 922 870-8777</p>
-                    <p class="text-muted">+63 920 922-0324</p>
+                    {% if object.phone_no4 %}<p class="text-muted">{{ object.phone_no4 }}</p>{% endif %}
+                    {% if object.phone_no5 %}<p class="text-muted">{{ object.phone_no5 }}</p>{% endif %}
+                    {% if object.phone_no6 %}<p class="text-muted">{{ object.phone_no6 }}</p>{% endif %}
                 </div>
                 <div class="col-md-3">
                     <span class="fa-stack fa-4x">
@@ -51,7 +52,7 @@
                         <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
                     </span>
                     <h4 class="service-heading">Email</h4>
-                    <p class="text-muted">sharkphil@gmail.com</p>
+                    {% if object.email %}<p class="text-muted">{{ object.email }}</p>{% endif %}
                 </div>
                 <div class="col-md-3">
                     <span class="fa-stack fa-4x">
@@ -107,7 +108,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading"> More Products</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
             <div class="row">

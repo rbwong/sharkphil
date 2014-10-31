@@ -21,5 +21,5 @@ class IndexPage(DetailView):
         context = super(IndexPage, self).get_context_data(**kwargs)
         context['make_list'] = Make.objects.all().order_by('name')
         context['series_list'] = Series.objects.all().order_by('name')
-        context['product_list'] = Product.objects.all().order_by('name')
+        context['brand_logo'] = self.object.logo
         return context

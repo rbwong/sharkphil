@@ -16,4 +16,5 @@ class SeriesPage(DetailView):
     def get_context_data(self, **kwargs):
         context = super(SeriesPage, self).get_context_data(**kwargs)
         context['accessory_list'] = Accessory.objects.filter(series=self.object).order_by('name')
+        context['brand_logo'] = get_object_or_404(Profile, id=1).logo
         return context
