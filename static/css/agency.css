@@ -298,8 +298,28 @@ header .intro-text .intro-heading {
     text-shadow: -2px 2px 8px rgba(0, 0, 0, 1);
 }
 
-header .intro-series .intro-heading, {
-    margin-bottom: 0px;
+header .intro-text-series {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+header .intro-text-series .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-shadow: -2px 2px 3px rgba(150, 150, 150, 1);
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+}
+
+header .intro-text-series .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    text-shadow: -2px 2px 8px rgba(0, 0, 0, 1);
 }
 
 @media(min-width:768px) {
@@ -326,8 +346,27 @@ header .intro-series .intro-heading, {
         text-shadow: -2px 2px 8px rgba(0, 0, 0, 1);
     }
 
-    header .intro-series .intro-heading, {
+    header .intro-text-series {
+        padding-top: 300px;
+        padding-bottom: 200px;
+    }
+
+    header .intro-text-series .intro-lead-in {
+        margin-bottom: 25px;
+        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+    }
+
+    header .intro-text-series .intro-heading {
         margin-top: 500px;
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+        text-shadow: -2px 2px 8px rgba(0, 0, 0, 1);
     }
 }
 
