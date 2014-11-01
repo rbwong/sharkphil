@@ -348,7 +348,6 @@ header .intro-text-series .intro-heading {
 
     header .intro-text-series {
         padding-top: 300px;
-        padding-bottom: 200px;
     }
 
     header .intro-text-series .intro-lead-in {
@@ -361,7 +360,7 @@ header .intro-text-series .intro-heading {
 
     header .intro-text-series .intro-heading {
         margin-left: -300px;
-        margin-bottom: -400px;
+        margin-top: 400px;
         text-transform: uppercase;
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 75px;
