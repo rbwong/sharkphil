@@ -295,7 +295,7 @@ header .intro-text .intro-heading {
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
-    text-shadow: -2px 2px 3px rgba(150, 150, 150, 1);
+    text-shadow: -2px 2px 8px rgba(0, 0, 0, 1);
 }
 
 @media(min-width:768px) {
@@ -319,7 +319,7 @@ header .intro-text .intro-heading {
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
-        text-shadow: -2px 2px 3px rgba(150, 150, 150, 1);
+        text-shadow: -2px 2px 8px rgba(0, 0, 0, 1);
     }
 }
 
