@@ -319,6 +319,7 @@ header .intro-text .intro-heading {
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
+        text-shadow: -2px 2px 3px rgba(150, 150, 150, 1);
     }
 }
 
